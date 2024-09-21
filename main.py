@@ -1,7 +1,12 @@
 class Solution:
     def scoreOfString(self, s: str) -> int:
-        dadfasdfasdf
+        score = 0
+        chars = list(s)
+        for i in range(len(chars) - 1):
+            score += abs(ord(chars[i]) - ord(chars[i+1]))
 
-        return 0
+        return score
 
-##why using github is so annoying?
+
+s = Solution()
+print(s.scoreOfString("zaz"))
